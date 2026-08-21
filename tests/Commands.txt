@@ -1,0 +1,2 @@
+To Run Playwright test : npx playwright test tests(Foldername)/filename.spec.js --headed
+To show Report : npx playwright show-report
