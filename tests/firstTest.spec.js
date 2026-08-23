@@ -6,6 +6,7 @@ test("First Test case",async function({page}){
 
     await page.locator("//input[@name='username']").fill("Admin");
     await page.locator("//input[@name='password']").fill("admin@123");
+    
     await page.pause();
 
 
