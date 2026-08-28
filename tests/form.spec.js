@@ -15,20 +15,20 @@ test ("Second Test",async function({page}){
 
     await page.locator("//textarea[@id='textarea']").fill("At Kolhapur, Maharashtra");
    
-    await page.locator("//input[@value='male']").click();
-
+    var result =   await page.locator("//input[@value='male']").click();
+    console.log(result);
     await page.locator("//input[@value='female']").click();
 
     const weekdays =['sunday','monday','tuesday','wednesday','thursday','friday','saturday']
     for(const day of weekdays ){
        // await page.locator("//input[@value='{day}']).click();
-        await page.locator(`//input[@value='${day}']`).click(); // ${...}. This is called string interpolation
+        await page.locator(`//input[@value='${day}']`).check(); // ${...}. This is called string interpolation
     }
     await page.locator('#country').selectOption('india');
    
     await page.locator('#colors').selectOption('Yellow');
    
-    
+
 
    // await page.locator("//button[@name='stop']").click();
     await page.pause();
