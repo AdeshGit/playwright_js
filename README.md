@@ -1,18 +1,6 @@
 # playwright_js
 Automation Testing using Playwright JavaScript
 
-echo "# playwright_js" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin git@github.com:AdeshGit/playwright_js.git
-git push -u origin main
-
-git remote add origin git@github.com:AdeshGit/playwright_js.git
-git branch -M main
-git push -u origin main
-
 ## 🏗️ Project Architecture
 playwright-automation/
 │
@@ -65,3 +53,28 @@ playwright-automation/
 ├── .gitignore
 ├── LICENSE
 └── README.md
+
+# 1. Check current status/branch
+git status
+git branch
+
+# 2. (Optional) Update local main before branching
+git pull origin main
+
+# 3. Create and switch to new branch
+git checkout -b your-branch-name
+
+# 4. Verify you're on the new branch
+git branch
+
+# 5. Stage your changes
+git add .
+
+# 6. Commit your changes
+git commit -m "your commit message"
+
+# 7. Push new branch to remote (first time uses -u)
+git push -u origin your-branch-name
+
+# For all future pushes on this branch, just use:
+git push
