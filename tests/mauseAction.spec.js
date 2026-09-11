@@ -27,7 +27,7 @@ test("Keyboard Test",async function ({page}){
 
     countryddl.selectOption({label:"India"});
 
-    //page.waitForTimeout(2000);
+    
     await page.pause();
 
 
